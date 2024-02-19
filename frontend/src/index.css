@@ -1,13 +1,148 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.title__item {
+    font-size: 50px;
+    font-weight: lighter;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.more {
+    display: flex;
+    width: 193px;
+    height: 50px;
+    background-color: white;
+    border: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.block__more {
+    margin-top: 10px;
+}
+
+.more:hover {
+    transform: scale(1.1);
+    
+}
+
+.more__plus {
+  width: 40px;
+  height: 40px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(230, 230, 230, 1);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.more__plus-item {
+    font-size: 50px;
+    font-weight:lighter;
+    color: rgb(230, 230, 230, 1);
+}
+
+
+.more__text {
+    font-weight: lighter;
+    font-size: 22px;
+    color: rgb(48, 47, 45, 1);
+}
+
+.selector {
+    /* background-color: blue; */
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(230, 230, 230, 1);
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 280px;
+    height: 100px;
+    line-height: 10px;
+}
+
+.selector__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    color: rgb(97, 95, 95);
+    transition-property: color;
+    transition-duration: 0.3s;
+}
+
+.selector__item:hover {
+    color: black;
+}
+
+.selector__name {
+    font-weight: lighter;
+}
+
+.selector__vector {
+    width: 10px;
+    height: 10px;
+}
+
+.selected {
+    display: flex;
+    width: max-content;
+    border-radius: 20px;
+    height: 40px;
+    border-width: 1px;
+    align-items: center;
+    background-color: rgb(250, 250, 250, 1);
+    cursor: pointer;
+}
+
+.selected__item {
+    margin: 10px;
+}
+
+.selected__name {
+    font-weight: lighter;
+    color: rgb(77, 74, 74);
+    transition-property: color;
+    transition-duration: 0.3s;
+}
+
+.selected__name:hover {
+    color: black;
+}
+
+.block_selected {
+    margin-top: 10px;
+}
+
+.group-selector {
+  width: 340px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(230, 230, 230, 1);
+  position: absolute;
+  background-color: white;
+}
+
+.go-btn {
+    font-size: 20px;
+    font-weight: lighter;
+    width: 331px;
+    height: 60px;
+    background-color: rgb(254, 230, 0, 1);
+    border: 0;
+    padding: 0;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.go-btn:hover {
+    transform: scale(1.01);
+}
+
+.block__go-btn {
+    margin-top: 50px;
 }
